@@ -1,3 +1,16 @@
+// Touch feedback for mobile: add/remove .touch-active on touch events
+document.querySelectorAll('.button').forEach(btn => {
+  btn.addEventListener('touchstart', function(e) {
+    btn.classList.add('touch-active');
+  });
+  btn.addEventListener('touchend', function(e) {
+    btn.classList.remove('touch-active');
+  });
+  btn.addEventListener('touchcancel', function(e) {
+    btn.classList.remove('touch-active');
+  });
+});
+
 // functions for basic math ops
 function add(a,b) {
   return (parseFloat(a) + parseFloat(b)).toString();

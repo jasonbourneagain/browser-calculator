@@ -66,3 +66,9 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   transform: translateY(4px);
 }
+
+.button.touch-active {
+    background-color: paleturquoise;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transform: translateY(4px);
+}
