@@ -27,12 +27,18 @@ body {
 }
 
 .display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 16px;
     width: 300px;
     height: 120px;
     background-color: white;
     border-radius: 12px;
     border: 2px solid black; 
     margin-bottom: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
 }
 
 .flex-row {
@@ -51,4 +57,12 @@ body {
     font-size: 24px;
     background-color: white;
     
+}
+
+.button:hover {background-color: paleturquoise}
+
+.button:active {
+  background-color: paleturquoise;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transform: translateY(4px);
 }
